@@ -9,14 +9,15 @@ function displayWords() {
   document.getElementById("word").innerText = wordList[number];
 }
 
+
 document.getElementById("start")?.addEventListener("click", function (e) {
   e.preventDefault();
 
-  if ((document.getElementById("start").innerText = "Start")) {
-    let myInterval = setInterval(displayWords, 1000);
+  if ((document.getElementById("start").innerText === "Start")) {
+    myInterval = setInterval(displayWords, 1000);
     console.log(myInterval)
     document.getElementById("start").innerText = "Stop";
-  } else if ((document.getElementById("start").innerText = "Stop")) {
+  } else if ((document.getElementById("start").innerText === "Stop")) {
     clearInterval(myInterval);
     document.getElementById("start").innerText = "Start";
   }
