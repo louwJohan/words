@@ -13,7 +13,7 @@ function displayWords() {
 
 startBtn?.addEventListener("click", function (e) {
   e.preventDefault();
-  if (text.length === 0 || text === "") {
+  if (text.length === 0) {
     alert("Please add words in Settings");
   } else if (time_int === 0 || time_int === undefined) {
     alert("Please set the time interval in Settings");
