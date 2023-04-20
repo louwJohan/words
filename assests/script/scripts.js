@@ -2,10 +2,11 @@ const startBtn = document.getElementById("start");
 
 let text = localStorage.getItem("word_List");
 let time_int = localStorage.getItem("time");
-let wordList = text.split(",");
+
 
 
 function displayWords() {
+  wordList = text.split(",");
   number = Math.floor(Math.random() * wordList.length);
   document.getElementById("word").innerText = wordList[number];
 }
