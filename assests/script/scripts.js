@@ -1,5 +1,5 @@
 let text = localStorage.getItem("word_List");
-let last = text.substr(text.length - 1);
+let last = text?.substr(text.length - 1);
 let wordList = [];
 let time_int = localStorage.getItem("time")
 const startBtn = document.getElementById("start");
