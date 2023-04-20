@@ -4,5 +4,7 @@ body {
 }
 
 .word {
-    margin-top: 50px;
+    margin-top: 100px;
+    font-size: 300%;
+    font-weight: 400;
 }

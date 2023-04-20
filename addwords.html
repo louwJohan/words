@@ -25,7 +25,7 @@
 
                 <ul class="nav nav-pills">
                     <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="addwords.html" class="nav-link active">Add Words</a></li>
+                    <li class="nav-item"><a href="addwords.html" class="nav-link active">Settings</a></li>
                     <li class="nav-item"><a href="practise.html" class="nav-link">Practise</a></li>
 
                 </ul>
@@ -48,8 +48,30 @@
                 <label for="words" class="form-label">Words</label>
                 <textarea class="form-control" id="words" rows="3"></textarea>
               </div>
+              
               <div class="col-auto">
                 <button type="submit" id="add" class="btn btn-primary mb-3">Submit</button>
+              </div>
+              <div class="mb-3">
+                <div class="col text-center">
+                    <h2>Select a time interval</h2>
+                </div>
+                <select class="form-select" id="time" aria-label="select time">
+                  <option selected>Select a time interval</option>
+                  <option value="1000">1 second</option>
+                  <option value="2000">2 seconds</option>
+                  <option value="3000">3 seconds</option>
+                  <option value="4000">4 seconds</option>
+                  <option value="5000">5 seconds</option>
+                  <option value="6000">6 seconds</option>
+                  <option value="7000">7 seconds</option>
+                  <option value="8000">8 seconds</option>
+                  <option value="9000">9 seconds</option>
+                  <option value="10000">10 seconds</option>
+                </select>
+                <div class="col-auto mt-3">
+                    <button type="submit" id="add_time" class="btn btn-primary mb-3">Submit</button>
+                  </div>
               </div>
               </form>
         </div>
